@@ -22,6 +22,11 @@ st.set_page_config(
     page_icon="🚀",
     layout="centered"
 )
+.markdown("""
+# 🚀 AI Marketing Copy Generator
+### Generate Professional Marketing Copy using **Google Gemini AI**
+""")
+
 st.markdown("""
 <style>
 
