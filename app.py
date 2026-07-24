@@ -22,9 +22,149 @@ st.set_page_config(
     page_icon="🚀",
     layout="centered"
 )
+st.markdown("""
+# 🚀 AI Marketing Copy Generator
+### Generate Professional Marketing Copy using **Google Gemini AI**
+""")
 
-st.title("🚀 AI Marketing Copy Generator")
-st.write("Generate marketing copy using Gemini AI")
+st.markdown("""
+<style>
+
+.stApp{
+background: linear-gradient(135deg,#0f172a,#1e293b,#0f766e);
+}
+
+h1{
+text-align:center;
+color:white;
+}
+
+h3{
+text-align:center;
+color:#d1d5db;
+}
+
+label{
+font-weight:bold;
+}
+
+div[data-baseweb="select"]{
+border-radius:12px;
+}
+
+.stTextInput input{
+border-radius:12px;
+}
+
+.stTextArea textarea{
+border-radius:12px;
+}
+
+.stButton>button{
+
+width:100%;
+height:55px;
+
+background:#14b8a6;
+
+color:white;
+
+font-size:20px;
+
+font-weight:bold;
+
+border-radius:12px;
+
+border:none;
+}
+
+.stButton>button:hover{
+
+background:#0f766e;
+
+color:white;
+
+}
+
+div[data-testid="stDownloadButton"] button{
+
+width:100%;
+
+background:#2563eb;
+
+color:white;
+
+border-radius:10px;
+
+}
+
+</style>
+""",unsafe_allow_html=True)
+with st.sidebar:
+
+    st.image("https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png",width=100)
+
+    st.title("About")
+
+    st.write("""
+AI Marketing Copy Generator
+
+Powered by
+
+Google Gemini
+
+Python
+
+Streamlit
+""")
+
+    st.success("Project 2")
+    product = st.text_input("📦 Product Name")
+
+description = st.text_area("📝 Product Description")
+
+platform = st.selectbox(
+"🌍 Platform",
+["Instagram","LinkedIn","Email"]
+)
+
+tone = st.selectbox(
+"🎭 Tone",
+[
+"Professional",
+"Friendly",
+"Luxury",
+"Funny",
+"Witty & Energetic"
+]
+)
+temperature = st.slider(
+"🔥 Temperature",
+0.0,
+1.0,
+0.7
+)
+
+top_p = st.slider(
+"🎯 Top P",
+0.0,
+1.0,
+0.9
+)
+if st.button("✨ Generate Marketing Copy"):
+    st.balloons()
+
+st.success("Marketing Copy Generated Successfully!")
+st.balloons()
+
+st.success("Marketing Copy Generated Successfully!")
+
+st.markdown("---")
+
+st.markdown(
+"<center>Made with ❤️ using Streamlit & Google Gemini</center>",
+unsafe_allow_html=True
+)
 
 # Inputs
 product = st.text_input("Product Name")
