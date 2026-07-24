@@ -23,83 +23,108 @@ st.set_page_config(
     layout="centered"
 )
 st.markdown("""
-# 🚀 AI Marketing Copy Generator
-### Generate Professional Marketing Copy using **Google Gemini AI**
-""")
-
-st.markdown("""
 <style>
 
+/* Background */
 .stApp{
-background: linear-gradient(135deg,#0f172a,#1e293b,#0f766e);
+    background: linear-gradient(135deg,#0f172a,#1e293b,#0f766e);
 }
 
+/* Headings */
 h1{
-text-align:center;
-color:Gold;
+    text-align:center;
+    color:#FFD700 !important;
 }
 
-h3{
-text-align:center;
-color:Gold;
+h2,h3,h4,h5,h6{
+    color:#FFD700 !important;
 }
 
+/* Normal Text */
+p{
+    color:white !important;
+    font-size:16px;
+}
+
+/* Labels */
 label{
-font-weight:bold;
+    color:#FFD700 !important;
+    font-weight:bold;
+    font-size:17px;
 }
 
-div[data-baseweb="select"]{
-border-radius:12px;
-}
-
+/* Text Input */
 .stTextInput input{
-border-radius:12px;
+    background:white;
+    color:black !important;
+    border-radius:12px;
 }
 
+/* Text Area */
 .stTextArea textarea{
-border-radius:12px;
+    background:white;
+    color:black !important;
+    border-radius:12px;
 }
 
+/* Select Box */
+div[data-baseweb="select"]{
+    background:white;
+    color:black !important;
+    border-radius:12px;
+}
+
+/* Dropdown Text */
+div[data-baseweb="select"] span{
+    color:black !important;
+}
+
+/* Slider Label */
+.stSlider label{
+    color:#FFD700 !important;
+}
+
+/* Button */
 .stButton>button{
-
-width:100%;
-height:55px;
-
-background:#14b8a6;
-
-color:Gold;
-
-font-size:20px;
-
-font-weight:bold;
-
-border-radius:12px;
-
-border:none;
+    width:100%;
+    height:55px;
+    background:#14b8a6;
+    color:white !important;
+    font-size:20px;
+    font-weight:bold;
+    border:none;
+    border-radius:12px;
 }
 
 .stButton>button:hover{
-
-background:#0f766e;
-
-color:Gold;
-
+    background:#0f766e;
+    color:white !important;
 }
 
+/* Download Button */
 div[data-testid="stDownloadButton"] button{
+    width:100%;
+    background:#2563eb;
+    color:white !important;
+    border-radius:10px;
+}
 
-width:100%;
+/* Success Message */
+div[data-testid="stAlert"]{
+    color:white !important;
+}
 
-background:#2563eb;
+/* Sidebar */
+section[data-testid="stSidebar"]{
+    background:#111827;
+}
 
-color:Gold;
-
-border-radius:10px;
-
+section[data-testid="stSidebar"] *{
+    color:white !important;
 }
 
 </style>
-""",unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 with st.sidebar:
 
     st.image("https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png",width=100)
