@@ -36,12 +36,12 @@ background: linear-gradient(135deg,#0f172a,#1e293b,#0f766e);
 
 h1{
 text-align:center;
-color:white;
+color:Gold;
 }
 
 h3{
 text-align:center;
-color:#d1d5db;
+color:Gold;
 }
 
 label{
@@ -67,7 +67,7 @@ height:55px;
 
 background:#14b8a6;
 
-color:white;
+color:Gold;
 
 font-size:20px;
 
@@ -82,7 +82,7 @@ border:none;
 
 background:#0f766e;
 
-color:white;
+color:Gold;
 
 }
 
@@ -92,7 +92,7 @@ width:100%;
 
 background:#2563eb;
 
-color:white;
+color:Gold;
 
 border-radius:10px;
 
